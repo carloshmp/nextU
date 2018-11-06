@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no">
+    <meta name="author" content="Carlos Humberto Moreno Pineda">
+    <meta name="description" content="Hoja de Vida">
+    <meta name="keywords" content="Hoja de Vida, Curriculum">
+    <title> Carlos Humberto Moreno - Hoja de Vida </title>
+  </head>
+  <body>
+    <!-- Definiendo la linea separador para darle legibilidad a la pagina -->
+    <svg width="1000px" height="10px">
+      <defs>
+        <line id="separador" x1="10" y1="0" x2="800" y2="0" stroke="blue" stroke-width="5" />
+      </defs>
+    </svg>
+
+    <header>
+      <svg width="180px" height="100px">
+        <image xlink:href="iniciales.svg"></image>
+      </svg>
+      <h1>  Curriculum Vitae </h1>
+      <!-- Ensayando la herencia de atributos del formato SVG -->
+      <svg width="1000px" height="10px">
+        <use xlink:href="#separador"/>
+      </svg>
+    </header>
+
+<section>
+  <h2>Datos Personales</h2>
+  <ul>
+    <li><strong>Nombres:</strong>Carlos Humberto</li>
+    <li><strong>Apellidos:</strong>Moreno Pineda</li>
+    <li><strong>Fecha de Nacimiento:</strong>15/12/1975</li>
+    <li><strong>Lugar de Nacimiento:</strong>Supia Caldas </li>
+  </ul>
+</section>
+<hr color="red">
+<section>
+  <h2>Enlaces de Menu</h2>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="educacion.html">Educacion</a>
+    <a href="experiencia.html">Experiencia</a>
+
+  </nav>
+</section>
+<svg width="1000" height="10">
+  <use xlink:href="#separador"/>
+</svg>
+<section>
+  <h2>Educacion</h2>
+    <table border="2">
+      <tr>
+        <td>Año</td>
+        <td>Institucion</td>
+        <td>Lugar</td>
+        <td>Culmino</td>
+      </tr>
+      <tr>
+        <td>1992</td>
+        <td>Instituto Integrado Supia</td>
+        <td>Supia</td>
+        <td>Si</td>
+      </tr>
+      <tr>
+        <td>2004</td>
+        <td>Universidad de Manizales</td>
+        <td>Manizales</td>
+        <td>Si</td>
+      </tr>
+      <tr>
+        <td>2003</td>
+        <td>Universidad Nacional</td>
+        <td>Manizales</td>
+        <td>No</td>
+      </tr>
+    </table>
+</section>
+
+<section>
+  <form >
+    <fieldset>
+      <legend><strong>Agregar Estudios</strong></legend>
+      <label for="año">Año</label>
+      <input type="number" id="año"  max="2018" min="1970" placeholder="1980" required><br>
+      <label for="institucion">Institucion</label>
+      <input type="text" id="institucion" placeholder="Colegio - Instituto o Universidad " required><br>
+      <label for="lugar">Lugar</label>
+      <input type="text" id="lugar" placeholder="Municipio - Ciudad" required><br>
+      <input type="submit" name="" value="Enviar">
+    </fieldset>
+  </form>
+</section>
+
+<hr color="red">
+
+<footer><strong>Direccion</strong>:Calle 48c #66 07;Oficina 205;<strong>Telefonos</strong> Fijo:2301302 Celular:316 329 3151; <strong>Medellin, Colombia</strong></footer>
+  </body>
+</html>

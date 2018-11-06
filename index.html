@@ -1,0 +1,74 @@
+<!-- Ensayando la forma de colocar comentarios para darle legibilidad al codigo -->
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no">
+    <meta name="author" content="Carlos Humberto Moreno Pineda">
+    <meta name="description" content="Hoja de Vida">
+    <meta name="keywords" content="Hoja de Vida, Curriculum","Manizales","Analista","Work Flow">
+    <title> Carlos Humberto Moreno - Hoja de Vida </title>
+  </head>
+
+  <body>
+    <!-- Definiendo la linea separador para darle legibilidad a la pagina -->
+    <svg width="1000px" height="10px">
+      <defs>
+        <line id="separador" x1="10" y1="0" x2="800" y2="0" stroke="blue" stroke-width="5" />
+      </defs>
+    </svg>
+
+    <header>
+      <svg width="180px" height="100px">
+        <image xlink:href="iniciales.svg"></image>
+      </svg>
+      <h1>  Curriculum Vitae </h1>
+      <!-- Ensayando la herencia de atributos del formato SVG -->
+      <svg width="1000px" height="10px">
+        <use xlink:href="#separador"/>
+      </svg>
+    </header>
+
+    <section>
+      <h2>Datos Personales</h2>
+      <ul>
+        <li><strong>Nombres:</strong>Carlos Humberto</li>
+        <li><strong>Apellidos:</strong>Moreno Pineda</li>
+        <li><strong>Fecha de Nacimiento:</strong>15/12/1975</li>
+        <li><strong>Lugar de Nacimiento:</strong>Supia Caldas </li>
+      </ul>
+    </section>
+    <!-- Probando nueva etiqueta que realiza una linea horizontal-->
+    <hr color="red">
+    <section>
+      <h2>Enlaces de Menu</h2>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="educacion.html">Educacion</a>
+        <a href="experiencia.html">Experiencia</a>
+      </nav>
+    </section>
+
+    <svg width="1000px" height="10px">
+      <use xlink:href="#separador"/>
+    </svg>
+
+    <section>
+      <h2>Informacion Personal</h2>
+        <img src="carlos_rafaela.jpg" width="10%" alt="Carlos H Moreno" title="Carlos H Moreno">
+        <h3>Perfil</h3>
+        <p>Capacidad de realizar planeacion y ejecucion de cronogramas de trabajo basado en proyectos y metas; analisis de flujo
+        de trabajo, analisis de riesgo informatico; aplicacion de modelos de innovacion</p>
+        <h3>Idiomas</h3>
+        <ul>
+          <li>Ingles - Escrito</li>
+          <li>Ingles - Comprension</li>
+        </ul>
+    </section>
+    <hr color="red">
+    <footer><strong>Direccion</strong>:Calle 48c #66 07;Oficina 205;<strong>Telefonos</strong> Fijo:2301302 Celular:316 329 3151; <strong>Medellin, Colombia</strong></footer>
+
+  </body>
+
+</html>
